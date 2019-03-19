@@ -19,6 +19,10 @@ public class Puerta {
         this.ancho = ancho;
     }
     
+    public Puerta(){
+        
+    }
+    
     public void cerrar(){
         this.estado=false;
     }

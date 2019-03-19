@@ -22,6 +22,15 @@ public class Casa {
         this.ventana = ventana;
         this.calefactor = calefactor;
     }
+    
+    public Casa(){
+        
+        this.puerta = new Puerta();
+        this.ventana = new ArrayList<>();
+        this.ventana.add(new Ventana());
+        this.calefactor = new ArrayList<>();        
+        
+    }
 
     public Puerta getPuerta() {
         return puerta;

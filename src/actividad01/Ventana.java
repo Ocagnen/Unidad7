@@ -20,6 +20,10 @@ public class Ventana {
         this.dimensiones = dimensiones;
         this.persiana = persiana;
     }
+    
+    public Ventana(){
+        
+    }
 
     public boolean isEstado() {
         return estado;
