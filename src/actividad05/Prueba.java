@@ -27,14 +27,13 @@ public class Prueba {
         
         // Reflexiva
         System.out.println("Reflexiva");
-        System.out.println(clienteB.equals(clienteC));
-        System.out.println(clienteA.equals(clienteB));
+        System.out.println(clienteB.equals(clienteB));        
         System.out.println("");
         
         // Simétrica
         System.out.println("Simétrica");
         System.out.println(clienteB.equals(clienteC));
-        System.out.println(clienteB.equals(clienteC));
+        System.out.println(clienteC.equals(clienteB));
         System.out.println("");
         
         // Transitiva
