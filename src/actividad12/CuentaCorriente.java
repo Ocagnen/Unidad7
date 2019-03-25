@@ -44,7 +44,11 @@ public class CuentaCorriente extends Cuenta{
 
     @Override
     public void retirar(double saldoRetirado) {
+        double nuevoSaldo = this.getSaldo()-saldoRetirado;
         
+        if (nuevoSaldo >= this.saldoMin){
+            this.setSaldo(nuevoSaldo);
+        }
     }
 
     
