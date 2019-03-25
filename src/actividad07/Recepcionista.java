@@ -18,7 +18,7 @@ public class Recepcionista extends Trabajador{
         this.hotel = hotel;
     }
     
-    private Recepcionista(){
+    public Recepcionista(){
         this.hotel = "NH";
     }
 
