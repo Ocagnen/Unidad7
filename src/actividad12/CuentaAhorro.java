@@ -44,6 +44,7 @@ public class CuentaAhorro extends Cuenta{
         return super.toString()+"\nCuentaAhorro{" + "interes=" + interes + ", comisionAnual=" + comisionAnual + '}';
     }
 
+    // Si el saldo es negativo no habrá interés
     @Override
     public void actualizarSaldo() {
         double nuevoSaldo;
@@ -56,6 +57,7 @@ public class CuentaAhorro extends Cuenta{
          this.setSaldo(nuevoSaldo);
     }
 
+    // Si el saldo es positivo se retirará el dinero, en caso contrario no
     @Override
     public void retirar(double saldoRetirado) {
         
