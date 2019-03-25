@@ -46,8 +46,14 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public void actualizarSaldo() {
+        double nuevoSaldo;
         
-        
+        if(this.getSaldo()>0){
+            nuevoSaldo = this.getSaldo()+(this.getSaldo()*this.interes)-this.comisionAnual;
+        } else {
+            nuevoSaldo = this.getSaldo()-this.comisionAnual;
+        }
+         this.setSaldo(nuevoSaldo);
     }
 
     @Override
