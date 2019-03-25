@@ -9,7 +9,7 @@ package actividad07;
  *
  * @author javier
  */
-public class Trabajador {
+public abstract class Trabajador {
 
     // Actividades 7,8,9 y 12
     private String nombre;
@@ -28,9 +28,7 @@ public class Trabajador {
         this.nombre = "Javier";
     }
 
-    public void cotizar() {
-        System.out.println("Cotizando como Trabajador");
-    }
+    public abstract void cotizar();
 
     public String getNombre() {
         return nombre;
