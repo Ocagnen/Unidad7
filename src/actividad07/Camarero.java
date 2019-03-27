@@ -43,6 +43,11 @@ public class Camarero extends Trabajador{
     public String toString() {
         return super.toString() + "\nCamarero{" + "rango=" + rango + '}';
     }
+
+    @Override
+    public void trabajar() {
+        System.out.println("Trabajo como camarero");
+    }
     
     
     

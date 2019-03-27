@@ -39,6 +39,11 @@ public class Recepcionista extends Trabajador{
     public void cotizar() {
         System.out.println("Cotiza como un recepcionista");
     }
+
+    @Override
+    public void trabajar() {
+        System.out.println("Trabajo como recepcionista");
+    }
     
     
     

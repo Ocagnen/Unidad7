@@ -18,6 +18,14 @@ public class Main {
 
         System.out.println(dado1.lanzar());
         System.out.println(moneda1.lanzar());
+        
+        /*
+        Azar algo;
+        algo = new Moneda();
+                System.out.println(algo.lanzar());
+        algo = new Dado();
+                System.out.println(algo.lanzar());        
+        */
 
     }
 

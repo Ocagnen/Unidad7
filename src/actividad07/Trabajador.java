@@ -53,6 +53,8 @@ public abstract class Trabajador {
     public void setNIF(String NIF) {
         this.NIF = NIF;
     }
+    
+    public abstract void trabajar();
 
     @Override
     public String toString() {
