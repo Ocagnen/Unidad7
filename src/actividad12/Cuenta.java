@@ -20,7 +20,8 @@ public abstract class Cuenta {
     public Cuenta(Persona cliente) {  
         Random alt = new Random();
         this.cliente = cliente;
-        this.saldo = 0;        
+        this.saldo = 0;     
+        // Podría usarse un contador 
         this.numeroCuenta = alt.nextLong();
     }
 

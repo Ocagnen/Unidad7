@@ -9,19 +9,24 @@ package actividad12;
  *
  * @author Javier
  */
-public class CuentaCorriente extends Cuenta{
-    
-    private final double INTERES = 0.15;
+public class CuentaCorriente extends Cuenta {
+
+    private final static double INTERES = 0.15;
     private double saldoMin;
 
     public CuentaCorriente(double saldoMin, Persona cliente) {
         super(cliente);
         this.saldoMin = saldoMin;
+        this.setSaldo(saldoMin);
     }
 
     public CuentaCorriente() {
-        
+
         this.saldoMin = 50;
+    }
+
+    public static double getINTERES() {
+        return INTERES;
     }
 
     public double getSaldoMin() {
@@ -40,32 +45,28 @@ public class CuentaCorriente extends Cuenta{
     /*
     Si es mayor que 1000, se usa como referencia para el interés el saldo
     mínimo, de lo contrario, se aplica el interés con normalidad.
-    */
+     */
     @Override
     public void actualizarSaldo() {
         double saldoNuevo;
-        
-        if(this.getSaldo()>1000){            
-            saldoNuevo = this.getSaldo()+(this.saldoMin*this.INTERES);
+
+        if (this.getSaldo() > 1000) {
+            saldoNuevo = this.getSaldo() + (this.saldoMin * this.INTERES);
         } else {
-            saldoNuevo = this.getSaldo()+(this.getSaldo()*this.INTERES);
+            saldoNuevo = this.getSaldo() + (this.getSaldo() * this.INTERES);
         }
-        
+
         this.setSaldo(saldoNuevo);
     }
 
     // El saldo tras retirar dinero no puede ser menor al saldo mínimo establecido
     @Override
     public void retirar(double saldoRetirado) {
-        double nuevoSaldo = this.getSaldo()-saldoRetirado;
-        
-        if (nuevoSaldo >= this.saldoMin){
+        double nuevoSaldo = this.getSaldo() - saldoRetirado;
+
+        if (nuevoSaldo >= this.saldoMin) {
             this.setSaldo(nuevoSaldo);
         }
     }
 
-    
-    
-    
-    
 }
