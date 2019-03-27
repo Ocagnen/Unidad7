@@ -17,6 +17,15 @@ public abstract class Vehiculo {
     es propio de la clase Vehiculo, sin embar, el método getVelocidad si se
     podría modificar, ya que sí que es abstract.
     */
+    
+    /*
+    Cuando la clase ya es final, la ultima de la rama de herencia, no va a 
+    tener clases hijas.
+    Se le pone final a la clase y sus atributos
+    public final class Dado extends Azar{
+    }
+    
+    */
 
     private int bastidor;
 
