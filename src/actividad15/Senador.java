@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package actividad15;
+
+/**
+ *
+ * @author javier
+ */
+public class Senador extends Legislador{
+    
+    private double salarioExtra;
+
+    public Senador(double salarioExtra) {
+        
+        this.salarioExtra = salarioExtra;
+    }
+
+    public double getSalarioExtra() {
+        return salarioExtra;
+    }
+
+    public void setSalarioExtra(double salarioExtra) {
+        this.salarioExtra = salarioExtra;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"\nSenador" + "\tsalarioExtra=" + salarioExtra;
+    }
+
+    @Override
+    public String getCamaraEnQueTrabaja() {
+        return "Senador";
+    }
+    
+    
+    
+    
+    
+}
