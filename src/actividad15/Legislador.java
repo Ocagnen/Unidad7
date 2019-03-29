@@ -9,6 +9,39 @@ package actividad15;
  *
  * @author javier
  */
-public class Legislador {
+public abstract class Legislador extends Persona{
+    
+    private String provinciaQueRepresenta;
+    private String partidoPolitico;
+
+    public Legislador() {
+        
+        this.provinciaQueRepresenta = "Málaga";
+        this.partidoPolitico = "X";
+    }
+
+    public String getProvinciaQueRepresenta() {
+        return provinciaQueRepresenta;
+    }
+
+    public void setProvinciaQueRepresenta(String provinciaQueRepresenta) {
+        this.provinciaQueRepresenta = provinciaQueRepresenta;
+    }
+
+    public String getPartidoPolitico() {
+        return partidoPolitico;
+    }
+
+    public void setPartidoPolitico(String partidoPolitico) {
+        this.partidoPolitico = partidoPolitico;
+    }
+
+    @Override
+    public String toString() {
+        return "\nLegislador" + "\tprovinciaQueRepresenta=" + provinciaQueRepresenta + ", partidoPolitico=" + partidoPolitico;
+    }
+    
+    
+    
     
 }
