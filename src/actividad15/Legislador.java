@@ -14,6 +14,13 @@ public abstract class Legislador extends Persona{
     private String provinciaQueRepresenta;
     private String partidoPolitico;
 
+    public Legislador(String provinciaQueRepresenta, String partidoPolitico, String nombre, String apellidos) {
+        super(nombre, apellidos);
+        this.provinciaQueRepresenta = provinciaQueRepresenta;
+        this.partidoPolitico = partidoPolitico;
+    }
+
+       
     public Legislador() {
         
         this.provinciaQueRepresenta = "Málaga";

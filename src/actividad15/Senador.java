@@ -13,11 +13,15 @@ public class Senador extends Legislador{
     
     private double salarioExtra;
 
-    public Senador(double salarioExtra) {
-        
+    public Senador(double salarioExtra, String provinciaQueRepresenta, String partidoPolitico, String nombre, String apellidos) {
+        super(provinciaQueRepresenta, partidoPolitico, nombre, apellidos);
         this.salarioExtra = salarioExtra;
     }
 
+    public Senador(){
+        
+    }
+    
     public double getSalarioExtra() {
         return salarioExtra;
     }
