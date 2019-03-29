@@ -32,7 +32,7 @@ public class Senador extends Legislador{
 
     @Override
     public String toString() {
-        return super.toString()+"\nSenador" + "\tsalarioExtra=" + salarioExtra;
+        return super.toString()+"\nSenador " + "\tsalarioExtra=" + salarioExtra;
     }
 
     @Override
