@@ -41,6 +41,8 @@ public abstract class Legislador extends Persona{
         return "\nLegislador" + "\tprovinciaQueRepresenta=" + provinciaQueRepresenta + ", partidoPolitico=" + partidoPolitico;
     }
     
+    public abstract String getCamaraEnQueTrabaja();
+    
     
     
     

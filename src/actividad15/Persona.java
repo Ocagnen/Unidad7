@@ -36,7 +36,7 @@ public class Persona {
         this.apellidos = apellidos;
     }
     
-    public abstract String getCamaraEnQueTrabaja();
+    
     
     
     
