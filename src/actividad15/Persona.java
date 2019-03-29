@@ -11,4 +11,34 @@ package actividad15;
  */
 public class Persona {
     
+    private String nombre;
+    private String apellidos;
+
+    public Persona() {
+        
+        this.nombre = "Javier";
+        this.apellidos = "Ocaña";
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+    
+    public abstract String getCamaraEnQueTrabaja();
+    
+    
+    
+    
 }
