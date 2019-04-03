@@ -17,15 +17,26 @@ public final class Math2 {
         
         Arrays.sort(a);
                 
-        return a[0];
+        return a[a.length-1];
         
     }
     
     public static double obtenerMin(double[] a){
         
+        /*
+        int min = a[0];
+        
+        for (int i = 0; i < a.length; i++) {
+            if(x[i] > min){
+            min = a[i];
+            }
+        }
+        
+        */
+        
         Arrays.sort(a);
         
-        return a[a.length-1];
+        return a[0];
     }
     
     public static double sumatorio(double[] a){

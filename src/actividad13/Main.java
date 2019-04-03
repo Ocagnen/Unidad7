@@ -6,6 +6,7 @@
 package actividad13;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 /**
  *
@@ -26,21 +27,37 @@ public class Main {
         lista.add(p2);
         lista.add(p3);
         lista.add(p4);
-        
+
         for (Persona persona : lista) {
             System.out.println(persona);
             persona.identificate();
         }
-        
+
         for (Persona persona : lista) {
-            if(persona instanceof Estudiante){
+            if (persona instanceof Estudiante) {
                 System.out.println("ESTUDIANTE");
                 System.out.println(((Estudiante) persona).getIDEstudiante());
             } else {
                 System.out.println("PROFESOR");
-                System.out.println(((Profesor)persona).getEspecialidad());
+                System.out.println(((Profesor) persona).getEspecialidad());
             }
         }
+
+        System.out.println("Lista ordenada por nif: ");
+        lista.sort(new ComparadorNif());
+
+        lista.forEach(System.out::println);
+
+        // Ordenación implementando comparator con clase interna anónima
+        System.out.println("Lista ordenada por apellido: ");
+        lista.sort(new Comparator<Persona>() {
+            @Override
+            public int compare(Persona o1, Persona o2) {
+                return o1.getApellidos().compareTo(o2.getApellidos());
+            }
+        });
+        
+        lista.forEach(System.out::println);
 
     }
 
