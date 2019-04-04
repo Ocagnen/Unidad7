@@ -5,11 +5,13 @@
  */
 package actividad15;
 
+import java.util.Comparator;
+
 /**
  *
  * @author javier
  */
-public abstract class Legislador extends Persona{
+public abstract class Legislador extends Persona implements Comparator<Legislador>{
     
     private String provinciaQueRepresenta;
     private String partidoPolitico;
@@ -49,6 +51,11 @@ public abstract class Legislador extends Persona{
     }
     
     public abstract String getCamaraEnQueTrabaja();
+
+    @Override
+    public int compare(Legislador o1, Legislador o2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
