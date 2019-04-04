@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package actividad15;
+package actividad19;
+
 /**
  *
- * @author javier
+ * @author Javier
  */
 public class Diputado extends Legislador{
     
