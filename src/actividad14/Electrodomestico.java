@@ -9,7 +9,7 @@ package actividad14;
  *
  * @author Javier
  */
-public abstract class Electrodomestico implements MuestraInformacion {
+public abstract class Electrodomestico{
     
     private double consumo;
     private String modelo;

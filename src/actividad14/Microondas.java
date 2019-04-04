@@ -9,7 +9,7 @@ package actividad14;
  *
  * @author Javier
  */
-public class Microondas extends Electrodomestico {
+public class Microondas extends Electrodomestico implements Comparable<Microondas>{
 
     private int vatios;
 
@@ -28,12 +28,18 @@ public class Microondas extends Electrodomestico {
 
     @Override
     public String toString() {
-        return "Microondas{" + "vatios=" + vatios + '}';
+        return super.toString()+"Microondas{" + "vatios=" + vatios + '}';
     }
 
+    /*
     @Override
     public void muestra() {
         System.out.println("Los Vatios son " + this.vatios);
     }
+    */
 
+    @Override
+    public int compareTo(Microondas o) {
+        return this.getVatios()-o.getVatios();
+    }
 }

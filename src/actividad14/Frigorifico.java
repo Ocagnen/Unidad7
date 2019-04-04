@@ -9,7 +9,7 @@ package actividad14;
  *
  * @author Javier
  */
-public class Frigorifico extends Electrodomestico {
+public class Frigorifico extends Electrodomestico implements Comparable<Frigorifico>{
 
     private double capacidadL;
 
@@ -28,12 +28,18 @@ public class Frigorifico extends Electrodomestico {
 
     @Override
     public String toString() {
-        return "Frigorifico{" + "capacidadL=" + capacidadL + '}';
+        return super.toString()+"Frigorifico{" + "capacidadL=" + capacidadL + '}';
     }
 
+    /*
     @Override
     public void muestra() {
         System.out.println("La capacidad es " + this.capacidadL + " litros");
     }
+    */
 
+    @Override
+    public int compareTo(Frigorifico o) {
+        return (int) (this.getCapacidadL()-o.getCapacidadL());
+    }
 }

@@ -56,8 +56,10 @@ public class Main {
                 return o1.getApellidos().compareTo(o2.getApellidos());
             }
         });
-        
+
         lista.forEach(System.out::println);
+
+        lista.sort(( o1, o2) -> o1.getApellidos().compareTo(o2.getApellidos()));
 
     }
 
